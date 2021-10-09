@@ -36,11 +36,11 @@ public class CalcService {
     }
 
     public String multiply(String a, String b) {
-        int sum;
+        int multiply;
         String line;
         try {
-            sum = Integer.parseInt(a) * Integer.parseInt(b);
-            line = "Произведение введеных чисел : " + sum;
+            multiply = Integer.parseInt(a) * Integer.parseInt(b);
+            line = "Произведение введеных чисел : " + multiply;
 
         }
         catch (NumberFormatException e) {
@@ -51,11 +51,11 @@ public class CalcService {
     }
 
     public String div(String a, String b) {
-        double sum;
+        double div;
         String line;
         try {
-            sum = Double.parseDouble(a) / Double.parseDouble(b);
-            line = "Частное введеных чисел : " + sum;
+            div = Double.parseDouble(a) / Double.parseDouble(b);
+            line = "Частное введеных чисел : " + div;
 
         }
         catch (NumberFormatException e) {
@@ -64,6 +64,5 @@ public class CalcService {
         return line;
 
     }
-
 
 }
