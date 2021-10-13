@@ -1,10 +1,13 @@
 package ru.levelp.homework_rest.service;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service
-public class CalcService {
 
+@Service
+public class CalcService implements CalcServiceInt {
+
+    @Override
     public String sum(String a, String b) {
         int sum;
         String line;
@@ -20,6 +23,7 @@ public class CalcService {
 
     }
 
+    @Override
     public String dif(String a, String b) {
         int dif;
         String line;
@@ -35,6 +39,7 @@ public class CalcService {
 
     }
 
+    @Override
     public String multiply(String a, String b) {
         int multiply;
         String line;
@@ -50,6 +55,7 @@ public class CalcService {
 
     }
 
+    @Override
     public String div(String a, String b) {
         double div;
         String line;
